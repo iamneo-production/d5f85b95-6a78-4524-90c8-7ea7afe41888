@@ -16,6 +16,9 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
+      - name: Dependencies
+        working-directory: nodeapp
+        run: npm i
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         env:
