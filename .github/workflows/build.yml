@@ -19,6 +19,9 @@ jobs:
       - name: Dependencies
         working-directory: nodeapp
         run: npm i
+      - name: Test Coverage
+        working-directory: nodeapp
+        run: npm test -- --coverage
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         env:
