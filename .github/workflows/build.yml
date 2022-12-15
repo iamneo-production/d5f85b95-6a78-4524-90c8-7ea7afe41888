@@ -19,7 +19,7 @@ jobs:
       - name: Dependencies
         working-directory: nodeapp
         run: npm i
-      - name: Test Coverage
+      - name: Test Coverages
         working-directory: nodeapp
         run: npm test -- --coverage
       - name: SonarCloud Scan
